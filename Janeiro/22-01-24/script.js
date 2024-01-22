@@ -10,7 +10,7 @@ function contarLetras(fala) {
 const letrasFala1 = contarLetras(fala1);
 const letrasFala2 = contarLetras(fala2);
 const letrasFala3 = contarLetras(fala3);
-//  okay
+
 let numeroSuspeito;
 
 if (letrasFala1 > letrasFala2 && letrasFala1 > letrasFala3) {
