@@ -3,7 +3,7 @@ const fala2 = "Eu tentei te ajudar desde o início!!";
 const fala3 = "Já pensou que o monstro pode ser controlado?";
 
 function contarLetras(fala) {
-  const falaSemEspacos = fala.replace(/\s/g, '');
+  // const falaSemEspacos = fala.replace(/\s/g, '');
   return falaSemEspacos.length;
 }
 
