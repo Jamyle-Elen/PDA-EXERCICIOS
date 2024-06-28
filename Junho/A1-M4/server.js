@@ -124,7 +124,3 @@ const Voyager = {
   
     verifyShipment_Curiosity 
 
-    const newProbe
-function insertProbe(...probe) {
-    return new Promise((resolve,))
-}
