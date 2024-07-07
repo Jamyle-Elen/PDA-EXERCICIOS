@@ -1,0 +1,1 @@
+import { getCep2 } from "./caminho-pasta"
