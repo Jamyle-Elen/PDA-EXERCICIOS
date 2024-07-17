@@ -1,23 +1,23 @@
-import { Router } from 'express'
-import { updateStatus } from '../controllers/user.controler';
+import { Router } from "express";
+import { createUser, getAllUsers, updateStatus } from "../controllers/User.controller";
 
 const userRouter = Router();
 
-userRouter.post("/user", (req, res) => {
+userRouter.post("/user", (req,res)=> {
     const { username, phone } = req.body;
     const newUser = createUser(username, phone);
     res.status(201).json({newUser});
-})
+});
 
-userRouter.get("/user", (req, res) => {
+userRouter.get("/user", (req,res)=> {
     const listUser = getAllUsers();
     res.status(200).json({listUser});
-})
+});
 
-userRouter.patch("/user:id", (req, res) => {
+userRouter.patch("/user/:id", (req,res)=> {
     const { id } = req.params;
-    const upadateUser = updateStatus(id);
-    res.status(200).json({upadateUser});
-})
+    const updateUser = updateStatus(id);
+    res.status(200).json({updateUser});
+});
 
 export { userRouter }
